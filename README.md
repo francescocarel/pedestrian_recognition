@@ -4,4 +4,4 @@ Shading Algorithm developed for Image Processing and Graphics (ea979) final proj
 ## Contributors:
   - André Barros de Medeiros
   - Guilherme Ricioli
-  - Marcelo
+  - Marcelo Martimiano Junior
