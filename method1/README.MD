@@ -11,9 +11,9 @@ While OpenCV's Cascade Classifiers are fast, they leave much to desire. That's w
 
 <ul><li><strong>Step 2:</strong> Sample N negative samples from a negative training set that does not contain any of the objects you want to detect and extract HOG descriptors from these samples as well. In practice N >> P.</ul></li>
 
-<ul><li><strong>Step 3:</strong> Train a Linear Support Vector Machine on your positive and negative samples.</ul></li>
+<ul><li><strong>Step 3:</strong> Train a <strong>Linear Support Vector Machine</strong> on your positive and negative samples.</ul></li>
 
-<ul><li><strong>Step 4:</strong> Apply **hard-negative mining**. For each image and each possible scale of each image in your negative training set, apply the sliding window technique and slide your window across the image. At each window compute your HOG descriptors and apply your classifier. If your classifier (incorrectly) classifies a given window as an object (and it will, there will absolutely be false-positives), record the feature vector associated with the false-positive patch along with the probability of the classification. </ul></li>
+<ul><li><strong>Step 4:</strong> Apply <em>hard-negative mining</em>. For each image and each possible scale of each image in your negative training set, apply the sliding window technique and slide your window across the image. At each window compute your HOG descriptors and apply your classifier. If your classifier (incorrectly) classifies a given window as an object (and it will, there will absolutely be false-positives), record the feature vector associated with the false-positive patch along with the probability of the classification. </ul></li>
 
 <ul><li><strong>Step 5:</strong> Take the false-positive samples found during the hard-negative mining stage, sort them by their confidence (i.e. probability) and re-train your classifier using these hard-negative samples. (Note: You can iteratively apply steps 4-5, but in practice one stage of hard-negative mining usually [not not always] tends to be enough. The gains in accuracy on subsequent runs of hard-negative mining tend to be minimal.)</ul></li>
 
