@@ -4,5 +4,5 @@
   
   - Use the following argument format for running the code with images as input:
   
-      python ped_detect.py --images path\to\your\directory
+        python ped_detect.py --images path\to\your\directory
    
