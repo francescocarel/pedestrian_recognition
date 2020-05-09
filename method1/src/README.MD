@@ -27,3 +27,9 @@ The values of these parameters are of extreme importance, as they can:
   - Dramatically affect the speed of the detection process.
   
 For a detailed description of what each parameter means and how to tune them, see [here](https://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/).
+
+### Tips on speeding up the object detection process:
+
+  - Resize your image or frame to be as small as possible *without sacrificing detection accuracy*: Prior to calling the detectMultiScale  function, reduce the width and height of your image. The smaller your image is, the less data there is to process, and thus the detector will run faster.
+  - Tune your *scale*  and *winStride*  parameters. These two arguments have a tremendous impact on your object detector speed. Both scale  and winStride  should be as large as possible, again, *without sacrificing detector accuracy*.
+  - If your detector still is not fast enough… you *might* want to look into re-implementing your program in C/C++. Sometimes you need the compiled binary speed of C, especially in resource constrained environments.
