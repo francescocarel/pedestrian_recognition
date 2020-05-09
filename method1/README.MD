@@ -4,10 +4,10 @@
   OpenCV ships with a pre-trained HOG + Linear SVM model that can be used to perform pedestrian detection in both images and video streams. Below we give an outline of the two:
 
 ## Dependencies: 
-  - OpenCV
-  - Numpy
-  - argparse
-  - imutils (for imutils in Anaconda: conda install -c conda-forge imutils)
+    - OpenCV
+    - Numpy
+    - argparse
+    - imutils (for imutils in Anaconda: conda install -c conda-forge imutils)
   
 ## Histogram of Oriented Gradients (HOG)
 
