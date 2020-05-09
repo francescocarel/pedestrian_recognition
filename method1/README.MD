@@ -1,7 +1,7 @@
 # Pedestrian Recognition via OpenCV's HOG + Linear SVM
   Inspired by Andrew Rosebrock @ https://www.pyimagesearch.com/2015/11/09/pedestrian-detection-opencv/
 
-  OpenCV ships with a pre-trained HOG + Linear SVM model that can be used to perform pedestrian detection in both images and video streams. Below we give an outline of the two:
+  OpenCV ships with a pre-trained HOG + Linear SVM model based, on Dalal and Triggs method to automatically detect pedestrians in images, that can be used to perform pedestrian detection in both images and video streams. Below we give an outline of the two:
 
 ## Dependencies: 
     - OpenCV
