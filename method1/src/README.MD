@@ -6,7 +6,7 @@
   
         python ped_detect.py --images path\to\your\directory
    
-  - The HOG method requires the *detectMultiScale* parameters to be set properly depending on your the images that you're processing and to tune the trade-off between accuracy and performance (especially important for real-time video processing).
+  - The HOG method requires the *detectMultiScale* parameters to be set properly depending on your the images that you're processing and to tune the trade-off between accuracy and performance (especially important for real-time video processing on resource constrained devices: arduino, raspberry Pi, etc..).
  
  ### The Parameters to the cv2.HOGDescriptor(). DetectMultiScale Function:
  
@@ -20,8 +20,10 @@
     
 The values of these parameters are of extreme importance, as they can:
 
-  - Increase the number of false-positive detections (i.e., reporting that a location in an image contains a person, but when in reality it does not).
+  - Increase the number of false-positive detections.
   
   - Result in missing a detection entirely.
 
-  - Dramatically affect the speed of the detection process
+  - Dramatically affect the speed of the detection process.
+  
+For a detailed description of what each parameter means and how to tune them, see [here](https://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/).
