@@ -17,6 +17,11 @@ While OpenCV's Cascade Classifiers are fast, they leave much to desire. That's w
 
 <ul><li><strong>Step 5:</strong> Take the false-positive samples found during the hard-negative mining stage, sort them by their confidence (i.e. probability) and re-train your classifier using these hard-negative samples. (Note: You can iteratively apply steps 4-5, but in practice one stage of hard-negative mining usually [not not always] tends to be enough. The gains in accuracy on subsequent runs of hard-negative mining tend to be minimal.)</ul></li>
 
-<ul><li><strong>Step 6:</strong>Your classifier is now trained and can be applied to your test dataset.</ul></li>
+<ul><li><strong>Step 6: </strong>Your classifier is now trained and can be applied to your test dataset.</ul></li>
 
 ## Linear Support Vector Machines (SVM)
+
+SVMs are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. More formally, a support-vector machine constructs a hyperplane or set of hyperplanes in a high- or infinite-dimensional space, which can be used for classification, regression, or other tasks like outliers detection.
+
+In the **linear** case (ours), the goal is to find the *"maximum-margin hyperplane"* that divides the data points into their correct classes, which means we want the distance between the closest data point of each class to be maximized.
+
