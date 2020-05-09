@@ -17,7 +17,7 @@
  
   - To be process a batch of images or a video/video-stream, you must include a loop to run through the images/frames. More specifically, in the case of processing video:
   
-  For real-time processing, *imutils.video*'s  *VideoStream* is the best for handling the camera frames in a threaded approach. But for handling a video file, cv2.VideoCapture  does the best job. Notice that in ped_detect_tuned.py, instead of the *--images* switch, we use:
+    - For real-time processing, *imutils.video*'s  *VideoStream* is the best for handling the camera frames in a threaded approach. But for handling a video file, cv2.VideoCapture  does the best job. Notice that in ped_detect_tuned.py, instead of the *--images* switch, we use:
       - *--video* for processing a video file (ommiting results in use of camera)
       - *--buffer* for controlling the maximum size of the *deque* of points. The larger the *deque*  the more (x, y)-coordinates of the object are tracked, essentially giving you a larger “history” of where the object has been in the video stream. The argument default value is **32**, indicating that we’ll maintain a buffer of (x, y)-coordinates of our object for the previous 32 frames.
   
