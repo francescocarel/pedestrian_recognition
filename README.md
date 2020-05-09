@@ -5,3 +5,5 @@ Pedestrain Recognition algorithms developed for Image Processing and Graphics (e
   - Luca Genovese
   - Francesco Carella
   - André Barros de Medeiros
+  
+### Method 1: HOG assisted by Linear SVM
