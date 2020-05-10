@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri May  8 22:12:54 2020
-
-@author: Andre
+@author: Adrian Rosebrock
 """
 
 # import the necessary packages
@@ -13,6 +11,7 @@ import numpy as np
 import argparse
 import imutils
 import cv2
+
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--images", required=True, help="path to images directory")
