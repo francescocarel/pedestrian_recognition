@@ -29,7 +29,7 @@ for imagePath in paths.list_images(args["images"]):
 	orig = image.copy()
 	# detect people in the image
 	(rects, weights) = hog.detectMultiScale(image, winStride=(8,8),
-		padding=(8, 8), scale=1.4)
+		padding=(4, 4), scale=1.4)
 	# draw the original bounding boxes
 	for (x, y, w, h) in rects:
 		cv2.rectangle(orig, (x, y), (x + w, y + h), (0, 0, 255), 2)
